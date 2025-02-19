@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    min-height: 100vh;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: "Nunito", sans-serif;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.padding {
+    padding: 15px 8%;
+}
+
+/* nav_heder_section */
+.heder_section {
+    background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 900px;
+    width: 100%;
+    position: relative;
+}
+
+nav {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(134, 88, 88);
+}
+
+.web_logo {
+    color: #FEA116 !important;
+    font-size: calc(1.375rem + 1.2vw);
+    font-weight: 800;
+}
+.navlink li a{
+    color: rgb(255, 17, 17);
+}
