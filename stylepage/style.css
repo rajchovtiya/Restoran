@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+    font-weight: 500;
 }
 
 body,
@@ -45,7 +47,7 @@ a {
 nav {
     position: absolute;
     width: 100%;
-    background-color: rgb(134, 88, 88);
+    background-color: transparent;
 }
 
 .web_logo {
@@ -53,6 +55,36 @@ nav {
     font-size: calc(1.375rem + 1.2vw);
     font-weight: 800;
 }
-.navlink li a{
-    color: rgb(255, 17, 17);
+
+.navlink li a {
+    font-size: 20px;
+}
+
+.nav-link {
+    color: white;
+    transition: all 0.75s;
+}
+
+.nav-link_click {
+    color: #FEA116;
+}
+
+.nav-link:hover {
+    color: #FEA116;
+}
+
+.buttons {
+    background-color: #FEA116;
+    border-color: #FEA116;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Nunito", sans-serif;
+
+}
+
+.buttons:hover {
+    background-color: #FEA116;
+    border-color: #FEA116;
+
 }
