@@ -32,10 +32,12 @@ a {
 .padding {
     padding: 15px 8%;
 }
-.padding2{
+
+.padding2 {
     padding: 15px 13%;
 
 }
+
 /* nav_heder_section */
 .heder_section {
     background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
@@ -122,13 +124,13 @@ a {
     font-size: 1vw;
     font-weight: 400;
     max-width: 47%;
-    margin-top: 3%;
+    margin-top: 2%;
     color: #f3f4f4;
     opacity: 0.9;
 }
 
 .conten_button {
-    margin-top: 3%;
+    margin-top: 2%;
     background-color: #FEA116;
     border: none;
     color: white;
@@ -151,13 +153,74 @@ a {
     rotate: 00deg;
 }
 
+/* hiero section */
+.hier_section {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+}
 
+.service_contenr {
+    margin-top: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+    gap: 20px;
+}
 
+.service_box {
+    width: 268px;
+    padding: 15px 3%;
+    height: 350px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 
+.service_box:hover {
+    background-color: #FEA116;
+}
 
+.service_box:hover.service_box i {
+    color: white;
+}
 
+.service_box:hover.service_box h3 {
+    color: white;
+}
 
+.service_box:hover.service_box p {
+    color: white;
+}
 
+.service_box i {
+    color: #FEA116;
+    font-size: 50px;
+    margin-bottom: 3%;
+    transition: all, 0.75s;
+
+}
+
+.service_box h3 {
+    font-weight: 700;
+    margin-top: 2%;
+    font-size: 26px;
+    color: black;
+    transition: all, 0.75s;
+
+}
+
+.service_box p {
+    max-width: 175px;
+    color: gray;
+    margin-top: 3%;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all, 0.75s;
+
+}
 
 
 
@@ -193,6 +256,11 @@ a {
     .navlink li a {
         font-size: 16px;
     }
+
+    .padding2 {
+        padding: 15px 5%;
+
+    }
 }
 
 
@@ -205,12 +273,47 @@ a {
 }
 
 @media(max-width:991px) {
-    .navbar-nav {
+    .collapse {
         background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;
         position: relative;
+        padding-block: 3%;
+        padding-bottom: 6%;
+        padding-inline: 3%;
 
+    }
+    .conten_img p{
+        font-size: 2vw;
+    }
+}
+
+@media(max-width:937px) {
+    .service_box {
+        width: 47%;
+        padding: 15px 5%;
+    }
+
+    .service_box p {
+        max-width: 100%;
+    }
+}
+@media(max-width:490px) {
+    .service_box {
+        width: 100%;
+        padding: 15px 5%;
+    }
+    .conten_heder {
+        padding-block: 15%;
+        padding-bottom: 5%;
+    }
+    .conten_button {
+        margin-top: 1%;
+        font-size: 14px;
+        padding: 1.4% 4%;
+    }
+    .conten_img p{
+        font-size: 2.2vw;
     }
 }
