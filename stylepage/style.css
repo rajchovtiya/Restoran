@@ -32,22 +32,24 @@ a {
 .padding {
     padding: 15px 8%;
 }
+.padding2{
+    padding: 15px 13%;
 
+}
 /* nav_heder_section */
 .heder_section {
     background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 900px;
-    width: 100%;
     position: relative;
 }
 
-nav {
+.navbar {
     position: absolute;
     width: 100%;
     background-color: transparent;
+    z-index: 9999;
 }
 
 .web_logo {
@@ -57,7 +59,8 @@ nav {
 }
 
 .navlink li a {
-    font-size: 20px;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .nav-link {
@@ -80,6 +83,7 @@ nav {
     font-size: 20px;
     font-weight: 500;
     font-family: "Nunito", sans-serif;
+    color: white;
 
 }
 
@@ -88,7 +92,125 @@ nav {
     border-color: #FEA116;
 
 }
-.ikan span i{
+
+.ikan span i {
     color: white;
     font-size: 30px;
+}
+
+.conten_heder {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    color: white;
+    padding-block: 9%;
+}
+
+.conten_img {
+    position: absolute;
+}
+
+.conten_img h1 {
+    font-size: 3.5vw;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.conten_img p {
+    font-size: 1vw;
+    font-weight: 400;
+    max-width: 47%;
+    margin-top: 3%;
+    color: #f3f4f4;
+    opacity: 0.9;
+}
+
+.conten_button {
+    margin-top: 3%;
+    background-color: #FEA116;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 1.4% 6%;
+    border-radius: 4px;
+}
+
+.heder_img {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    transition: all 0.75s;
+}
+
+.heder_img img {
+    max-width: 43%;
+    animation: rotate 50s linear infinite;
+    rotate: 00deg;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------- media kaveri and animation */
+@keyframes rotate {
+    0% {
+        rotate: 0deg;
+    }
+
+
+    50% {
+        rotate: 180deg;
+
+    }
+
+
+    100% {
+        rotate: 360deg;
+
+    }
+}
+
+@media(max-width:1250px) {
+    .padding {
+        padding: 15px 4%;
+    }
+
+    .navlink li a {
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width:1150px) {
+
+    .navlink li a,
+    .buttons {
+        font-size: 16px;
+    }
+}
+
+@media(max-width:991px) {
+    .navbar-nav {
+        background: linear-gradient(rgba(15, 23, 43, .9), rgba(15, 23, 43, .9)), url(../img/bg-hero.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+
+    }
 }
