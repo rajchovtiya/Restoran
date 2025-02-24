@@ -312,6 +312,7 @@ a {
     align-items: center;
     justify-content: space-between;
     margin-top: 5%;
+    flex-wrap: wrap;
 }
 
 .experience,
@@ -552,6 +553,8 @@ a {
     display: flex;
     justify-content: space-between;
     margin-top: 3%;
+    flex-wrap: wrap;
+    gap: 20px;
 
 }
 
@@ -569,7 +572,7 @@ a {
 
 .masterchefsbox {
     overflow: hidden;
-    width: 22%;
+    width: 300px;
     height: 342px;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: all, 0.75s;
@@ -720,7 +723,6 @@ a {
 }
 
 footer {
-    height: 500px;
     width: 100%;
     background-color: #0f172b;
     margin-top: 3%;
@@ -762,7 +764,8 @@ footer {
     align-items: center;
     gap: 10px;
 }
-.ikon_con{
+
+.ikon_con {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -773,29 +776,65 @@ footer {
     border: 1px solid white;
     margin-top: 2%;
 }
-.footer_box h5{
+
+.footer_box h5 {
     font-weight: 600;
     font-size: 23px;
 }
-.sing{
+
+.sing {
     height: 70px;
     background-color: white;
     padding: 9px;
     border-radius: 5px;
     padding-left: 30px;
 }
-.sing input{
+
+.sing input {
     border: none;
     background-color: transparent;
     height: 100%;
 }
-.sing button{
+
+.sing button {
     padding: 16px 52px;
     background-color: #FEA116;
     border: none;
     color: white;
     border-radius: 5px;
 }
+
+.footer_lastconten {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2%;
+    color: white;
+    flex-wrap: wrap;
+
+}
+
+.conten_last p {
+    font-weight: 300;
+}
+
+.conten_last p span {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer_menu ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.footer_menu ul li {
+    padding: 1px 20px;
+}
+
 /* --------- media kaveri and animation */
 @keyframes rotate {
     0% {
@@ -815,7 +854,7 @@ footer {
     }
 }
 
-@media(max-width:1250px) {
+@media(max-width:1270px) {
     .padding {
         padding: 15px 4%;
     }
@@ -827,6 +866,15 @@ footer {
     .padding2 {
         padding: 15px 5%;
 
+    }
+
+    .book_table {
+        flex-direction: column;
+    }
+
+    .imgBook,
+    .imgBook img {
+        width: 100%;
     }
 }
 
@@ -855,8 +903,6 @@ footer {
     .second_layer .smalls,
     .second_layer .laraj {
         position: relative;
-        right: 0;
-        left: 0;
     }
 
     .resctoran_experience {
@@ -864,11 +910,17 @@ footer {
     }
 
     .smalls {
-        max-width: 43%;
+        max-width: 34%;
+        position: relative;
+        right: 20%;
     }
 
     .about_text {
         margin-top: 4%;
+    }
+
+    .masterchefsbox {
+        width: 46%;
     }
 }
 
@@ -888,6 +940,19 @@ footer {
     .conten_img p {
         font-size: 2vw;
     }
+
+    .food_contenrbox {
+        flex-direction: column;
+    }
+
+    .foditemsbox,
+    .food_ditelbox {
+        width: 100%;
+    }
+
+    .footer_lastconten {
+        justify-content: center;
+    }
 }
 
 @media(max-width:937px) {
@@ -898,6 +963,31 @@ footer {
 
     .service_box p {
         max-width: 100%;
+    }
+}
+
+@media(max-width:570px) {
+    .masterchefsbox {
+        width: 100%;
+    }
+
+    .breakfast,
+    .launch,
+    .dinner,
+    .food-itembox {
+        padding: 10px 2.3% 1% 7%;
+    }
+
+    .breakfat_text h2,
+    .lanuch_text h2,
+    .dinner_text h2 {
+        font-size: 18px;
+    }
+
+    .tea-cup i,
+    .launch_btager i,
+    .dinner_food i {
+        font-size: 27px;
     }
 }
 
@@ -920,5 +1010,74 @@ footer {
 
     .conten_img p {
         font-size: 2.2vw;
+    }
+
+    .sing button {
+        padding: 11px 38px;
+    }
+
+    .sing {
+        height: 59px;
+    }
+
+    .footer_menu ul {
+        gap: 2px;
+    }
+
+    .footer_box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 3%;
+    }
+
+    .footer_contenr {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .sing input {
+        width: 97px;
+    }
+
+    .experience {
+        padding-left: 11px;
+        padding-right: 6%;
+    }
+
+    .box_exprieance h2,
+    .box_exprieance_popular h2 {
+        font-size: 17px;
+    }
+
+    .years h1,
+    .years_popular h1 {
+        font-size: 26px;
+    }
+
+    .food_name h2 {
+        font-size: 17px;
+    }
+
+    .food_name h1 {
+        font-size: 20px;
+    }
+
+    .foodimg img {
+        width: 82px;
+    }
+
+    .hedig_twofood {
+        margin-top: 4%;
+        font-size: 29px;
+    }
+
+    .slick-slide {
+        width: 280px;
+    }
+
+    .user_name h5 {
+        font-size: 17px;
     }
 }
