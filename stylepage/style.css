@@ -352,8 +352,12 @@ a {
 .experience {
     border-left: 6px solid #FEA116;
     padding-left: 15px;
-    border-right: 6px solid #FEA116;
     padding-right: 11%;
+
+}
+
+.popular {
+    border-left: 6px solid #FEA116;
 
 }
 
@@ -394,6 +398,7 @@ a {
     align-items: center;
     justify-content: center;
     margin-top: 2%;
+    flex-wrap: wrap;
 }
 
 .breakfast,
@@ -943,6 +948,7 @@ footer {
 
     .food_contenrbox {
         flex-direction: column;
+        margin-top: 9%;
     }
 
     .foditemsbox,
@@ -975,19 +981,28 @@ footer {
     .launch,
     .dinner,
     .food-itembox {
-        padding: 10px 2.3% 1% 7%;
+        padding: 10px 9% 1% 9%;
+        margin-top: 5%;
     }
 
     .breakfat_text h2,
     .lanuch_text h2,
     .dinner_text h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .tea-cup i,
     .launch_btager i,
     .dinner_food i {
-        font-size: 27px;
+        font-size: 34px;
+    }
+
+    .popular {
+        margin-top: 3%;
+    }
+
+    .food_money i {
+        font-size: 12px;
     }
 }
 

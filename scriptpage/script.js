@@ -24,6 +24,14 @@ $(function () {
             stagger: 0.3
 
         })
+        gsap.from(".restoran_img img", {
+            opacity: 0,
+            duration: 1.4,
+            delay: 0.17,
+            stagger: 0.4,
+            scale: 0
+
+        })
 
     }
     gsapanimesn()
@@ -93,6 +101,8 @@ $(function () {
             e.classList.add("bodercolore")
         })
     })
+
+
 })
 $(function () {
 
@@ -109,7 +119,7 @@ $(function () {
                 settings: {
                     arrows: true,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '10px',
                     slidesToShow: 2,
                 }
             },
@@ -118,10 +128,11 @@ $(function () {
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
+                    centerPadding: '10px',
                     slidesToShow: 1
                 }
             }
         ]
     });
 })
+
