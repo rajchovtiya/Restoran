@@ -65,16 +65,37 @@ a {
     font-weight: 400;
 }
 
-.nav-link {
+.nav-linktext {
     color: white;
     transition: all 0.75s;
+    position: relative;
+    margin-left: 25px;
+    padding: 35px 0;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
+    outline: 0;
+    transition: .5s;
 }
 
 .nav-link_click {
     color: #FEA116;
 }
 
-.nav-link:hover {
+.dropdown-itemlink {
+    display: block;
+    width: 100%;
+    padding: .25rem 1rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+}
+
+.nav-linktext:hover {
     color: #FEA116;
 }
 
@@ -156,7 +177,6 @@ a {
 /* hiero section */
 .hier_section {
     background-color: #fff;
-    min-height: 100vh;
 }
 
 .service_contenr {
@@ -373,6 +393,7 @@ a {
 
 .foodmenu {
     margin-top: 7%;
+    overflow: hidden;
 }
 
 .hedig_food {
@@ -686,6 +707,7 @@ a {
     min-width: 27%;
     border: 1px solid #dee2e6;
     padding: 2% 2% 0%;
+    cursor: grab;
 }
 
 .slider_clients_box i {
@@ -840,7 +862,171 @@ footer {
     padding: 1px 20px;
 }
 
+/* ---- about */
+.conten_heder_about {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: white;
+    padding-block: 9%;
+    flex-direction: column;
+}
+
+.hederabout {
+    overflow: hidden;
+}
+
+.hederabout h1 {
+    font-size: 90px;
+    font-weight: 800;
+}
+
+.aboutmenu {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 1%;
+}
+
+.aboutmenu p {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.aboutmenu p span {
+    color: #FEA116;
+}
+
+.aboutmenu h6 {
+    color: #666565;
+    font-size: 20px;
+}
+
+/* ------ service */
+.our_service {
+    margin-top: 3%;
+}
+
+.our_service h1 {
+    text-align: center;
+    color: #FEA116;
+    font-family: Pacifico;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.our_service h3 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    margin-top: 2%;
+}
+
+.service_our {
+    width: 309px;
+}
+
+/* --- Contact */
+.contact_page {
+    margin-top: 3%;
+}
+
+.contact_page h6 {
+    text-align: center;
+    color: #FEA116;
+    font-family: Pacifico;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.contact_page h5 {
+    text-align: center;
+    font-size: 37px;
+    font-weight: 800;
+    margin-top: 1%;
+}
+
+.contact_owner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4%;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.owner h2 {
+    color: #FEA116;
+    font-family: Pacifico;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.owner p {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1%;
+
+}
+
+.owner p i {
+    color: #FEA116;
+}
+
+.map_from_contenr {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 3%;
+    height: 400px;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+.google_map {
+    position: relative;
+    height: 100%;
+    width: 47%;
+}
+
+.leaflet-left {
+    left: 87%;
+}
+
+.leaflet-top {
+    top: 74%;
+}
+.google_map p a{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    padding: 10px 20px; 
+    background-color: white;
+    color: rgb(64, 64, 235);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 22222222;
+    font-size: 15px;
+    font-weight: 500;
+}
+.contact_from{
+    width: 47%;
+    height: 100%;
+}
+.form-control:focus {
+    color: rgb(102, 101, 101);
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(255, 208, 139);
+    outline: 0px;
+    box-shadow: rgba(254, 161, 22, 0.25) 0px 0px 0px 0.25rem;
+}
 /* --------- media kaveri and animation */
+
 @keyframes rotate {
     0% {
         rotate: 0deg;
@@ -883,7 +1069,6 @@ footer {
     }
 }
 
-
 @media(max-width:1150px) {
 
     .navlink li a,
@@ -924,8 +1109,12 @@ footer {
         margin-top: 4%;
     }
 
-    .masterchefsbox {
+    .mainchefs {
         width: 46%;
+    }
+
+    .masterchefsbox {
+        width: 100%;
     }
 }
 
@@ -970,10 +1159,27 @@ footer {
     .service_box p {
         max-width: 100%;
     }
+    .map_from_contenr{
+        flex-direction: column;
+        height: 900px;
+        gap: 15px;
+    }
+    .google_map,.contact_from{
+        width: 100%;
+    }
+}
+@media(max-width:579px) {
+    .owner{
+        margin-left: 2%;
+    }
+    .contact_owner{
+        gap: 20px;
+        justify-content: center;
+    }
 }
 
 @media(max-width:570px) {
-    .masterchefsbox {
+    .mainchefs {
         width: 100%;
     }
 
@@ -1050,6 +1256,7 @@ footer {
     .footer_contenr {
         align-items: center;
         justify-content: center;
+
     }
 
     .sing input {
