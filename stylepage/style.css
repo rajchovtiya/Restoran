@@ -1210,6 +1210,9 @@ footer {
     .food_money i {
         font-size: 12px;
     }
+    .hederabout h1{
+        font-size: 30px;
+    }
 }
 
 @media(max-width:490px) {

@@ -1,3 +1,15 @@
+let food_arr=[
+    arr_one=[
+        img=""
+    ]
+]
+
+
+
+
+
+
+
 // --- gsap
 $(function () {
     function gsapanimesn() {
@@ -293,5 +305,7 @@ $(function () {
         .openPopup();
 
 })
+
+
 
 
