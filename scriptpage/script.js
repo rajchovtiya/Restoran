@@ -1,15 +1,180 @@
-let food_arr=[
-    arr_one=[
-        img=""
+
+let food_arr = [
+    arr_one = [
+        [
+            img = "img/menu-1.jpg",
+            name = "Chicken Burger",
+            price = "$115",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-2.jpg",
+            name = "Chicken Burger",
+            price = "$150",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-4.jpg",
+            name = "Chicken Burger",
+            price = "$90",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-3.jpg",
+            name = "Chicken Burger",
+            price = "$200",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-5.jpg",
+            name = "Chicken Burger",
+            price = "$300",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-8.jpg",
+            name = "Chicken Burger",
+            price = "$432",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-7.jpg",
+            name = "Chicken Burger",
+            price = "$120",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-6.jpg",
+            name = "Chicken Burger",
+            price = "$901",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ]
+    ],
+    arr_one = [
+        [
+            img = "img/menu-8.jpg",
+            name = "Chicken Burger",
+            price = "$152",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-7.jpg",
+            name = "Chicken Burger",
+            price = "$99",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-6.jpg",
+            name = "Chicken Burger",
+            price = "$212",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-5.jpg",
+            name = "Chicken Burger",
+            price = "$123",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-4.jpg",
+            name = "Chicken Burger",
+            price = "$999",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-3.jpg",
+            name = "Chicken Burger",
+            price = "$765",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-2.jpg",
+            name = "Chicken Burger",
+            price = "$567",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-1.jpg",
+            name = "Chicken Burger",
+            price = "$456",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ]
+    ],
+    arr_one = [
+        [
+            img = "img/menu-7.jpg",
+            name = "Chicken Burger",
+            price = "$215",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-5.jpg",
+            name = "Chicken Burger",
+            price = "$185",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-8.jpg",
+            name = "Chicken Burger",
+            price = "$117",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-6.jpg",
+            name = "Chicken Burger",
+            price = "$915",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-3.jpg",
+            name = "Chicken Burger",
+            price = "$415",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-4.jpg",
+            name = "Chicken Burger",
+            price = "$615",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-1.jpg",
+            name = "Chicken Burger",
+            price = "$715",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ],
+        [
+            img = "img/menu-2.jpg",
+            name = "Chicken Burger",
+            price = "$315",
+            food_conten = "Ipsum ipsum clita erat amet dolor justo diam"
+
+        ]
     ]
 ]
-
-
-
-
-
-
-
 // --- gsap
 $(function () {
     function gsapanimesn() {
@@ -264,7 +429,7 @@ $(function () {
         centerMode: true,
         centerPadding: '40px',
         slidesToShow: 3,
-        autoplay: true,
+        // autoplay: true,
         autoplaySpeed: 3000,
         dots: true,
         responsive: [
@@ -288,6 +453,8 @@ $(function () {
             }
         ]
     });
+
+
 })
 // --google map
 $(function () {
@@ -305,7 +472,57 @@ $(function () {
         .openPopup();
 
 })
+// -- food menu item
+$(function () {
+    let n = 0;
+    let food_contenrbox = document.querySelector(".food_contenrbox")
+    function foodmenu() {
+        food_contenrbox.innerText = ""
+        food_arr[n].forEach((e) => {
+            let foditemsbox = document.createElement("div")
+            let foodimg = document.createElement("div")
+            let img = document.createElement("img")
+            let food_ditelbox = document.createElement("div")
+            let food_name = document.createElement("div")
+            let h2 = document.createElement("h2")
+            let h1 = document.createElement("h1")
+            let food_money = document.createElement("div")
+            let i = document.createElement("i")
+
+            foditemsbox.classList.add("foditemsbox")
+            foodimg.classList.add("foodimg")
+            img.src = e[0]
+            food_ditelbox.classList.add("food_ditelbox")
+            food_name.classList.add("food_name")
+            h2.innerText = e[1]
+            h1.innerText = e[2]
+            food_money.classList.add("food_money")
+            i.innerText = e[3]
 
 
 
+            food_contenrbox.appendChild(foditemsbox)
+
+            foditemsbox.appendChild(foodimg)
+            foodimg.appendChild(img)
+            foditemsbox.appendChild(food_ditelbox)
+            food_ditelbox.appendChild(food_name)
+            food_name.appendChild(h2)
+            food_name.appendChild(h1)
+            food_ditelbox.appendChild(food_money)
+            food_money.appendChild(i)
+
+        })
+
+    }
+    foodmenu()
+    let food_itembox = document.querySelectorAll(".food-itembox")
+    food_itembox.forEach((e) => {
+        e.addEventListener("click", () => {
+            let number_n = Number(e.getAttribute("id"))
+            n = number_n
+            foodmenu()
+        })
+    })
+})
 

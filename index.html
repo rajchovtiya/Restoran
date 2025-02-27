@@ -23,6 +23,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="stylepage/style.css">
 
 </head>
@@ -176,7 +177,7 @@
                 <h1 class="hedig_food">___ Food Menu ___</h1>
                 <h3 class="hedig_twofood">Most Popular Items </h3>
                 <div class="food_items">
-                    <div class="food-itembox breakfast bodercolore">
+                    <div class="food-itembox breakfast bodercolore" id="0">
                         <div class="tea-cup">
                             <i class="fa fa-coffee fa-2x "></i>
                         </div>
@@ -185,7 +186,7 @@
                             <h2>Breakfast</h2>
                         </div>
                     </div>
-                    <div class="food-itembox launch">
+                    <div class="food-itembox launch" id="1">
                         <div class="launch_btager">
                             <i class="fa fa-hamburger fa-2x"></i>
                         </div>
@@ -194,7 +195,7 @@
                             <h2>Launch</h2>
                         </div>
                     </div>
-                    <div class="food-itembox dinner">
+                    <div class="food-itembox dinner" id="2">
                         <div class="dinner_food">
                             <i class="fa fa-utensils fa-2x"></i>
                         </div>
@@ -206,119 +207,119 @@
 
                 </div>
                 <div class="food_contenrbox">
-                    <div class="foditemsbox">
-                        <div class="foodimg">
-                            <img src="img/menu-1.jpg" alt="">
-                        </div>
-                        <div class="food_ditelbox">
-                            <div class="food_name">
-                                <h2>Chicken Burger</h2>
-                                <h1>$155</h1>
-                            </div>
-                            <div class="food_money">
-                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="foditemsbox">
-                        <div class="foodimg">
-                            <img src="img/menu-1.jpg" alt="">
-                        </div>
-                        <div class="food_ditelbox">
-                            <div class="food_name">
-                                <h2>Chicken Burger</h2>
-                                <h1>$155</h1>
-                            </div>
-                            <div class="food_money">
-                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="foditemsbox">
-                        <div class="foodimg">
-                            <img src="img/menu-1.jpg" alt="">
-                        </div>
-                        <div class="food_ditelbox">
-                            <div class="food_name">
-                                <h2>Chicken Burger</h2>
-                                <h1>$155</h1>
-                            </div>
-                            <div class="food_money">
-                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="foditemsbox">
-                        <div class="foodimg">
-                            <img src="img/menu-1.jpg" alt="">
-                        </div>
-                        <div class="food_ditelbox">
-                            <div class="food_name">
-                                <h2>Chicken Burger</h2>
-                                <h1>$155</h1>
-                            </div>
-                            <div class="food_money">
-                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="foditemsbox">
-                        <div class="foodimg">
-                            <img src="img/menu-1.jpg" alt="">
-                        </div>
-                        <div class="food_ditelbox">
-                            <div class="food_name">
-                                <h2>Chicken Burger</h2>
-                                <h1>$155</h1>
-                            </div>
-                            <div class="food_money">
-                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="foditemsbox">
-                        <div class="foodimg">
-                            <img src="img/menu-1.jpg" alt="">
-                        </div>
-                        <div class="food_ditelbox">
-                            <div class="food_name">
-                                <h2>Chicken Burger</h2>
-                                <h1>$155</h1>
-                            </div>
-                            <div class="food_money">
-                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="foditemsbox">
-                        <div class="foodimg">
-                            <img src="img/menu-1.jpg" alt="">
-                        </div>
-                        <div class="food_ditelbox">
-                            <div class="food_name">
-                                <h2>Chicken Burger</h2>
-                                <h1>$155</h1>
-                            </div>
-                            <div class="food_money">
-                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="foditemsbox">
-                        <div class="foodimg">
-                            <img src="img/menu-1.jpg" alt="">
-                        </div>
-                        <div class="food_ditelbox">
-                            <div class="food_name">
-                                <h2>Chicken Burger</h2>
-                                <h1>$155</h1>
-                            </div>
-                            <div class="food_money">
-                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
-                            </div>
-                        </div>
-                    </div>
 
+                    <!-- <div class="foditemsbox">
+                        <div class="foodimg">
+                            <img src="img/menu-1.jpg" alt="">
+                        </div>
+                        <div class="food_ditelbox">
+                            <div class="food_name">
+                                <h2>Chicken Burger</h2>
+                                <h1>$155</h1>
+                            </div>
+                            <div class="food_money">
+                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foditemsbox">
+                        <div class="foodimg">
+                            <img src="img/menu-1.jpg" alt="">
+                        </div>
+                        <div class="food_ditelbox">
+                            <div class="food_name">
+                                <h2>Chicken Burger</h2>
+                                <h1>$155</h1>
+                            </div>
+                            <div class="food_money">
+                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foditemsbox">
+                        <div class="foodimg">
+                            <img src="img/menu-1.jpg" alt="">
+                        </div>
+                        <div class="food_ditelbox">
+                            <div class="food_name">
+                                <h2>Chicken Burger</h2>
+                                <h1>$155</h1>
+                            </div>
+                            <div class="food_money">
+                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foditemsbox">
+                        <div class="foodimg">
+                            <img src="img/menu-1.jpg" alt="">
+                        </div>
+                        <div class="food_ditelbox">
+                            <div class="food_name">
+                                <h2>Chicken Burger</h2>
+                                <h1>$155</h1>
+                            </div>
+                            <div class="food_money">
+                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foditemsbox">
+                        <div class="foodimg">
+                            <img src="img/menu-1.jpg" alt="">
+                        </div>
+                        <div class="food_ditelbox">
+                            <div class="food_name">
+                                <h2>Chicken Burger</h2>
+                                <h1>$155</h1>
+                            </div>
+                            <div class="food_money">
+                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foditemsbox">
+                        <div class="foodimg">
+                            <img src="img/menu-1.jpg" alt="">
+                        </div>
+                        <div class="food_ditelbox">
+                            <div class="food_name">
+                                <h2>Chicken Burger</h2>
+                                <h1>$155</h1>
+                            </div>
+                            <div class="food_money">
+                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foditemsbox">
+                        <div class="foodimg">
+                            <img src="img/menu-1.jpg" alt="">
+                        </div>
+                        <div class="food_ditelbox">
+                            <div class="food_name">
+                                <h2>Chicken Burger</h2>
+                                <h1>$155</h1>
+                            </div>
+                            <div class="food_money">
+                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="foditemsbox">
+                        <div class="foodimg">
+                            <img src="img/menu-1.jpg" alt="">
+                        </div>
+                        <div class="food_ditelbox">
+                            <div class="food_name">
+                                <h2>Chicken Burger</h2>
+                                <h1>$155</h1>
+                            </div>
+                            <div class="food_money">
+                                <i>Ipsum ipsum clita erat amet dolor justo diam </i>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
             </div>
             <div class="book_table">
@@ -651,30 +652,13 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+
     <script src="scriptpage/script.js"></script>
 
 

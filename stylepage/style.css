@@ -30,7 +30,7 @@ a {
 }
 
 .padding {
-    padding: 15px 8%;
+    padding: 4px 8%;
 }
 
 .padding2 {
@@ -708,11 +708,13 @@ a {
     border: 1px solid #dee2e6;
     padding: 2% 2% 0%;
     cursor: grab;
+    color: #FEA116;
+
 }
 
 .slider_clients_box i {
-    color: #FEA116;
     font-size: 60px;
+
 }
 
 .slider_clients_box p {
@@ -738,6 +740,7 @@ a {
 .user_name h5 {
     font-weight: 800;
     font-size: 23px;
+    color: black;
 }
 
 .user_name h6 {
@@ -1000,11 +1003,12 @@ footer {
 .leaflet-top {
     top: 74%;
 }
-.google_map p a{
+
+.google_map p a {
     position: absolute;
     top: 1%;
     left: 1%;
-    padding: 10px 20px; 
+    padding: 10px 20px;
     background-color: white;
     color: rgb(64, 64, 235);
     display: flex;
@@ -1014,10 +1018,12 @@ footer {
     font-size: 15px;
     font-weight: 500;
 }
-.contact_from{
+
+.contact_from {
     width: 47%;
     height: 100%;
 }
+
 .form-control:focus {
     color: rgb(102, 101, 101);
     background-color: rgb(255, 255, 255);
@@ -1025,6 +1031,21 @@ footer {
     outline: 0px;
     box-shadow: rgba(254, 161, 22, 0.25) 0px 0px 0px 0.25rem;
 }
+
+
+/* slick slider */
+.slick-dots li button {
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #FEA116 !important;
+}
+
+
 /* --------- media kaveri and animation */
 
 @keyframes rotate {
@@ -1148,6 +1169,10 @@ footer {
     .footer_lastconten {
         justify-content: center;
     }
+
+    .nav-linktext {
+        padding: 0px;
+    }
 }
 
 @media(max-width:937px) {
@@ -1159,20 +1184,30 @@ footer {
     .service_box p {
         max-width: 100%;
     }
-    .map_from_contenr{
+
+    .map_from_contenr {
         flex-direction: column;
         height: 900px;
         gap: 15px;
     }
-    .google_map,.contact_from{
+
+    .google_map,
+    .contact_from {
         width: 100%;
     }
+    .conten_heder_about {
+        padding-top: 17%;
+    }
+    
+    
 }
+
 @media(max-width:579px) {
-    .owner{
+    .owner {
         margin-left: 2%;
     }
-    .contact_owner{
+
+    .contact_owner {
         gap: 20px;
         justify-content: center;
     }
@@ -1210,7 +1245,8 @@ footer {
     .food_money i {
         font-size: 12px;
     }
-    .hederabout h1{
+
+    .hederabout h1 {
         font-size: 30px;
     }
 }
